@@ -1,0 +1,33 @@
+###
+GET http://localhost:4004/employeesrv/employee HTTP/1.1
+
+
+###
+POST http://localhost:4004/employeesrv/employee HTTP/1.1
+Content-Type: application/json
+
+{
+      "fName": "Srilekha",
+      "lName": "paloju",
+      "dob": "2000-02-01",
+      "email": "srilekha@gmail.com",
+      "phone": "9364543278",
+
+}
+
+### get along with the address
+
+GET  http://localhost:4004/employeesrv/employee?$expand=address HTTP/1.1
+
+### get pagination
+
+GET http://localhost:4004/employeesrv/employee?$expand=address&$top=20&skip=10 HTTP/1.1
+
+### get filter
+
+GET http://localhost:4004/employeesrv/employee?$expand=address&$filter=fName eq 'ram' HTTP/1.1
+
+
+
+### get single employee
+GET http://localhost:4004/employeesrv/employee/e5d3e77b-9b5a-4f34-bc56-750d54ffae19 HTTP/1.1
