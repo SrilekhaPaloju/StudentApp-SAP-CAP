@@ -14,6 +14,7 @@ entity employee :cuid, types.PersonDetails {
         // fName:String;
         // lName:String;
         dob   : Date;
+        age : Integer;
         email : types.email not null;
         phone : types.phone not null;
         address :Composition of  Address;

@@ -10,8 +10,9 @@ Content-Type: application/json
       "fName": "Srilekha",
       "lName": "paloju",
       "dob": "2000-02-01",
+       "age":0,
       "email": "srilekha@gmail.com",
-      "phone": "9364543278",
+      "phone": "9364543278"
 
 }
 
